@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import {io} from 'socket.io-client'
 
-const socket = io(import.meta.env.VITE_REACT_APP_SERVER_URL)
+const socket = io('https://websockets-swart.vercel.app/')
 
 export default function  App  (){
   const [data, setData]= useState({name:'',age:0})
